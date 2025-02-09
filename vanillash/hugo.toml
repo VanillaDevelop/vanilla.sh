@@ -1,0 +1,4 @@
+baseURL = 'https://vanilla.sh/'
+languageCode = 'en-GB'
+title = 'Vanilla.sh'
+theme = 'vanillash'
