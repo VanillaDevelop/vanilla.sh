@@ -1,5 +1,12 @@
-<nav>
-    <a href="/">Home</a>
-    <a href="/posts">Posts</a>
-    <a href="/tags">Tags</a>
+<nav class="navbar">
+    <div class="nav-content">
+        <a href="/" class="nav-logo">Vanilla.sh</a>
+        <div class="nav-links">
+            {{ block "nav-links" . }}
+            <a href="/">Home</a>
+            <a href="/posts">Posts</a>
+            <a href="/tags">Tags</a>
+            {{ end }}
+        </div>
+    </div>
 </nav>

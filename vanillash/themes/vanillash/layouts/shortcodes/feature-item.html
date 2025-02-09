@@ -1,0 +1,12 @@
+{{ $title := .Get "title" }} {{ $image := .Get "image" }}
+
+<div class="feature-item">
+  <div class="feature-image">
+    {{ with .Get "image" }}
+    <img src="{{ $image }}" alt="{{ $title }}" />
+    {{ end }}
+  </div>
+  <h3 class="feature-title">{{ $title }}</h3>
+  <hr class="separator" />
+  <p class="feature-content">{{ .Inner | markdownify }}</p>
+</div>
