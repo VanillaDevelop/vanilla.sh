@@ -1,6 +1,8 @@
-{{ $title := .Get "title" }} {{ $image := .Get "image" }}
+{{ $title := .Get "title" }}
+{{ $image := .Get "image" }}
+{{ $class := .Get "class" }}
 
-<div class="feature-item">
+<div class="feature-item {{ $class }}">
   <div class="feature-image">
     {{ with .Get "image" }}
     <img src="{{ $image }}" alt="{{ $title }}" />
