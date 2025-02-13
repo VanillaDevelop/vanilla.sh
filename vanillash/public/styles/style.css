@@ -2,6 +2,7 @@
 
 body {
   font-family: "42dot Sans", sans-serif;
+  margin: 0;
 }
 
 p {
@@ -36,6 +37,14 @@ h6 {
   font-size: 1.5rem;
   color: #333;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
 }
 
 .nav-links {
@@ -90,6 +99,11 @@ h6 {
 
 .col-third {
   flex: 0 1 calc(33.333% - 1.334rem);
+  min-width: 300px;
+}
+
+.col-twothirds {
+  flex: 1 1 calc(66.666% - 1rem);
   min-width: 300px;
 }
 
@@ -152,6 +166,40 @@ h6 {
   );
   margin: 1rem auto;
   width: 80%;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: #f8f8f8;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-icons a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-icons a:hover {
+  color: #333;
 }
 
 @media (max-width: 700px) {
