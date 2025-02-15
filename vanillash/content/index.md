@@ -20,6 +20,21 @@ On this page, you can expect:
   {{< /div >}}
   {{< /feature-grid >}}
 
+{{< timeline >}}
+{{< timeline-item title="B.Sc. Computer Science" date="2021" >}}
+Obtained my bachelor's degree in computer science from the University of Innsbruck, with a thesis focused on machine learning and data analysis.
+{{< /timeline-item >}}
+{{< timeline-item title="M.Sc. Software Engineering" date="2023" >}}
+Obtained my master's degree in software engineering from the University of Innsbruck, with a focus on data science and scientific research.
+{{< /timeline-item >}}
+{{< timeline-item title="Thesis Publication" date="2024" >}}
+My master's thesis was published in Findings of ACL 2024 and awarded the "Best Master's Thesis" award of the Department of Computer Science.
+{{< /timeline-item >}}
+{{< timeline-item title="Full-Stack Developer" date="2025" >}}
+Working as a full-stack software developer in online banking, maintaining legacy systems and building new customer-facing solutions.
+{{< /timeline-item >}}
+{{< /timeline >}}
+
 # Development
 
 I consider myself an _engineer_ at heart. That generally means a lot of tinkering. Over the years I've played around with several dozen different programming language, frameworks, and libraries. I learned the basics, maybe built a small project with it, and then moved on. The problem with this approach is that you never really learn the intricacies of each tool fully, and spend a lot of time re-learning the same concepts with different accents. Recently, I've resolved myself to use a smaller toolkit.
@@ -56,7 +71,7 @@ Although C# holds a special place in my heart for being the first programming la
 
 Despite focusing on these languages, the world of software development is vast, and I won't always be able to resist the temptation to tinker with a new toy. For example, the website you're on right now was originally scaffolded using Bootstrap Studio using pure HTML and CSS, then converted into a Hugo template. Did I know what Hugo was before I built it? No, but after seeing that Squarespace charges 11€/month and doesn't even offer the option to change your template for all pages of a blog, I figured this was the better investment.
 
-# Recent Projects
+# Current Projects
 
 Looking for a quick showcase of what I've been working on recently? Recently, my focus has been web development. I've
 

@@ -4,6 +4,11 @@
       <img src="{{ absURL `images/Vanilla.svg` }}" alt="Vanilla.sh" />
       Vanilla.sh</a
     >
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="nav-links">
       {{ block "nav-links" . }}
       <a href="/">Home</a>
@@ -13,3 +18,10 @@
     </div>
   </div>
 </nav>
+
+<script>
+  document.querySelector(".hamburger").addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".nav-links").classList.toggle("active");
+  });
+</script>

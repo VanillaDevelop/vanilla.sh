@@ -1,0 +1,12 @@
+<li class="timeline-item">
+  <div class="timeline-content">
+    <div class="timeline-marker-container">
+      <div class="timeline-date">{{ .Get "date" }}</div>
+      <div class="timeline-marker"></div>
+    </div>
+    <div class="timeline-info">
+      <h4 class="timeline-title">{{ .Get "title" }}</h4>
+      {{ .Inner }}
+    </div>
+  </div>
+</li>

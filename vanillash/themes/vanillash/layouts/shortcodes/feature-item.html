@@ -1,6 +1,5 @@
-{{ $title := .Get "title" }}
-{{ $image := .Get "image" }}
-{{ $class := .Get "class" }}
+{{ $title := .Get "title" }} {{ $image := .Get "image" }} {{ $class := .Get
+"class" }}
 
 <div class="feature-item {{ $class }}">
   <div class="feature-image">
@@ -9,6 +8,6 @@
     {{ end }}
   </div>
   <h3 class="feature-title">{{ $title }}</h3>
-  <hr class="separator" />
+  <hr class="feature-separator" />
   <p class="feature-content">{{ .Inner | markdownify }}</p>
 </div>

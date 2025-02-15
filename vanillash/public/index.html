@@ -8,6 +8,22 @@
     type="text/css"
     href="http://localhost:1313/styles/style.css"
   />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="http://localhost:1313/styles/timeline.css"
+  />
+  <link rel="stylesheet" type="text/css" href="http://localhost:1313/styles/nav.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="http://localhost:1313/styles/footer.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="http://localhost:1313/styles/features.css"
+  />
   <script defer src="http://localhost:1313/js/fontawesome.min.js"></script>
   <script defer src="http://localhost:1313/js/solid.min.js"></script>
   <script defer src="http://localhost:1313/js/brands.min.js"></script>
@@ -19,6 +35,11 @@
       <img src="http://localhost:1313/images/Vanilla.svg" alt="Vanilla.sh" />
       Vanilla.sh</a
     >
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <div class="nav-links">
       
       <a href="/">Home</a>
@@ -28,6 +49,13 @@
     </div>
   </div>
 </nav>
+
+<script>
+  document.querySelector(".hamburger").addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".nav-links").classList.toggle("active");
+  });
+</script>
 <div class="wrapper">
 <h1 id="about">About</h1>
 <div class="feature-grid">
@@ -52,13 +80,78 @@
 
   
 </div>
+<div class="timeline">
+  <ul class="timeline-list">
+    
+<li class="timeline-item">
+  <div class="timeline-content">
+    <div class="timeline-marker-container">
+      <div class="timeline-date">2021</div>
+      <div class="timeline-marker"></div>
+    </div>
+    <div class="timeline-info">
+      <h4 class="timeline-title">B.Sc. Computer Science</h4>
+      
+Obtained my bachelor's degree in computer science from the University of Innsbruck, with a thesis focused on machine learning and data analysis.
+
+    </div>
+  </div>
+</li>
+
+<li class="timeline-item">
+  <div class="timeline-content">
+    <div class="timeline-marker-container">
+      <div class="timeline-date">2023</div>
+      <div class="timeline-marker"></div>
+    </div>
+    <div class="timeline-info">
+      <h4 class="timeline-title">M.Sc. Software Engineering</h4>
+      
+Obtained my master's degree in software engineering from the University of Innsbruck, with a focus on data science and scientific research.
+
+    </div>
+  </div>
+</li>
+
+<li class="timeline-item">
+  <div class="timeline-content">
+    <div class="timeline-marker-container">
+      <div class="timeline-date">2024</div>
+      <div class="timeline-marker"></div>
+    </div>
+    <div class="timeline-info">
+      <h4 class="timeline-title">Thesis Publication</h4>
+      
+My master's thesis was published in Findings of ACL 2024 and awarded the "Best Master's Thesis" award of the Department of Computer Science.
+
+    </div>
+  </div>
+</li>
+
+<li class="timeline-item">
+  <div class="timeline-content">
+    <div class="timeline-marker-container">
+      <div class="timeline-date">2025</div>
+      <div class="timeline-marker"></div>
+    </div>
+    <div class="timeline-info">
+      <h4 class="timeline-title">Full-Stack Developer</h4>
+      
+Working as a full-stack software developer in online banking, maintaining legacy systems and building new customer-facing solutions.
+
+    </div>
+  </div>
+</li>
+
+
+  </ul>
+</div>
+
 <h1 id="development">Development</h1>
 <p>I consider myself an <em>engineer</em> at heart. That generally means a lot of tinkering. Over the years I&rsquo;ve played around with several dozen different programming language, frameworks, and libraries. I learned the basics, maybe built a small project with it, and then moved on. The problem with this approach is that you never really learn the intricacies of each tool fully, and spend a lot of time re-learning the same concepts with different accents. Recently, I&rsquo;ve resolved myself to use a smaller toolkit.</p>
 <div class="feature-grid">
     
-
-
-
+  
 
 <div class="feature-item col-half">
   <div class="feature-image">
@@ -67,14 +160,12 @@
     
   </div>
   <h3 class="feature-title">Dart</h3>
-  <hr class="separator" />
+  <hr class="feature-separator" />
   <p class="feature-content">As a huge fan of rapid prototyping and building clean and useful UIs for my applications, I&rsquo;ve recently fallen in love with Flutter for building cross-platform frontend apps. In the future, I hope to pivot most of my frontend- and full-stack development to Dart and Flutter.</p>
 </div>
 
 
-
-
-
+  
 
 <div class="feature-item col-half">
   <div class="feature-image">
@@ -83,14 +174,12 @@
     
   </div>
   <h3 class="feature-title">Java</h3>
-  <hr class="separator" />
+  <hr class="feature-separator" />
   <p class="feature-content">Let&rsquo;s be real: Java is probably not a favourite among coders. However, as I have a lot of exposition to Java EE for backend development in my current position, Spring is a natural fit for quickly bootstrapping APIs, and Java-based servers can generally be deployed relatively painlessly.</p>
 </div>
 
 
-
-
-
+  
 
 <div class="feature-item col-half">
   <div class="feature-image">
@@ -99,14 +188,12 @@
     
   </div>
   <h3 class="feature-title">Python</h3>
-  <hr class="separator" />
+  <hr class="feature-separator" />
   <p class="feature-content">I used Python excessively during my university days, especially during my master&rsquo;s programme, which was heavily focused on machine learning and data science. While I&rsquo;ve since sworn off using Python for other use-cases like web-apps (Django ♥), I still use it for data analysis and machine learning projects.</p>
 </div>
 
 
-
-
-
+  
 
 <div class="feature-item col-half">
   <div class="feature-image">
@@ -115,14 +202,14 @@
     
   </div>
   <h3 class="feature-title">C / C# / C&#43;&#43;</h3>
-  <hr class="separator" />
+  <hr class="feature-separator" />
   <p class="feature-content">Although C# holds a special place in my heart for being the first programming language I learned, I tend not to come in contact with it very frequently. However, C-based languages are used in various places of interest, such as game development and microcontrollers.</p>
 </div>
 
 
 </div>
 <p>Despite focusing on these languages, the world of software development is vast, and I won&rsquo;t always be able to resist the temptation to tinker with a new toy. For example, the website you&rsquo;re on right now was originally scaffolded using Bootstrap Studio using pure HTML and CSS, then converted into a Hugo template. Did I know what Hugo was before I built it? No, but after seeing that Squarespace charges 11€/month and doesn&rsquo;t even offer the option to change your template for all pages of a blog, I figured this was the better investment.</p>
-<h1 id="recent-projects">Recent Projects</h1>
+<h1 id="current-projects">Current Projects</h1>
 <p>Looking for a quick showcase of what I&rsquo;ve been working on recently? Recently, my focus has been web development. I&rsquo;ve</p>
 <div class="feature-grid">
     
