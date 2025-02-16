@@ -3,7 +3,9 @@ languageCode = 'en-GB'
 title = 'Vanilla.sh'
 theme = 'vanillash'
 
+disableKinds = ["taxonomy", "term"]
+
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true

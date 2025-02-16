@@ -1,5 +1,7 @@
 {{ define "main" }}
-    {{ range .Pages.ByPublishDate.Reverse }}
-        {{- partial "listitem.html" . -}}
-    {{ end }}
+<h1>{{ .Title }}</h1>
+<div class="list-grid">
+  {{ range .Pages.ByPublishDate.Reverse }} {{- partial "listitem.html" . -}} {{
+  end }}
+</div>
 {{ end }}

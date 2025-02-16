@@ -1,0 +1,42 @@
+.list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.list-grid-item {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.list-grid-item-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.list-grid-item-summary {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.list-grid-item-link a {
+  font-size: 0.9rem;
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.list-grid-item-link a:hover {
+  color: #2563eb;
+}

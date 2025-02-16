@@ -5,23 +5,34 @@
       Vanilla.sh</a
     >
     <button class="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
+      <i class="fa-solid fa-bars"></i>
     </button>
     <div class="nav-links">
       {{ block "nav-links" . }}
       <a href="/">Home</a>
       <a href="/posts">Posts</a>
-      <a href="/tags">Tags</a>
       {{ end }}
     </div>
+  </div>
+  <div class="nav-links-mobile">
+    {{ block "nav-links-mobile" . }}
+    <a href="/">Home</a>
+    <a href="/posts">Posts</a>
+    {{ end }}
   </div>
 </nav>
 
 <script>
-  document.querySelector(".hamburger").addEventListener("click", function () {
-    this.classList.toggle("active");
-    document.querySelector(".nav-links").classList.toggle("active");
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinksMobile = document.querySelector(".nav-links-mobile");
+    const body = document.body;
+
+    // Toggle menu
+    hamburger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      hamburger.classList.toggle("active");
+      navLinksMobile.classList.toggle("active");
+    });
   });
 </script>

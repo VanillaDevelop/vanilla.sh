@@ -1,10 +1,13 @@
-<li>
-    <h3>
-        <a href="{{ .RelPermalink }}">
-            {{ .Title }}
-        </a>
-    </h3>
-    {{ if .PublishDate }} <p>Date: {{ time.Format "02.01.2006" .PublishDate }}</p> {{ end }}
-    {{ if .Params.Tags }} <p>Tags: {{ partial "tags.html" . -}}</p> {{ end }}
-    {{ if .Summary }} <p>Summary: {{ .Summary }}</p> {{ end }}
-</li>
+<div class="list-grid-item">
+  <h3>{{ .Title }}</h3>
+  {{ if .PublishDate }}
+  <div class="list-grid-item-date">
+    {{ time.Format "02.01.2006" .PublishDate }}
+  </div>
+  {{ end }} {{ if .Summary }}
+  <div class="list-grid-item-summary">{{ .Summary }}</div>
+  {{ end }}
+  <div class="list-grid-item-link">
+    <a href="{{ .RelPermalink }}"> Continue Reading </a>
+  </div>
+</div>

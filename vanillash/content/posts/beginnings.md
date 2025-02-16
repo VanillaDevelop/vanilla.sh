@@ -2,7 +2,6 @@
 date = '2025-02-08T20:00:21+01:00'
 draft = true
 title = 'Beginnings'
-tags = ['hugo', 'markdown']
 summary = 'This is a test post'
 +++
 ## Introduction
