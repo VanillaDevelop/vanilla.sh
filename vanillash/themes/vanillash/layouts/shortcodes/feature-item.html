@@ -1,13 +1,12 @@
-{{ $title := .Get "title" }} {{ $image := .Get "image" }} {{ $class := .Get
-"class" }}
+{{$title := .Get "title"}}{{$image := .Get "image"}}{{$class := .Get "class"}}
 
-<div class="feature-item {{ $class }}">
+<div class="feature-item {{$class}}">
   <div class="feature-image">
-    {{ with .Get "image" }}
-    <img src="{{ $image }}" alt="{{ $title }}" />
-    {{ end }}
+    {{if $image}}
+    <img src="{{$image}}" alt="{{$title}}" />
+    {{end}}
   </div>
-  <h3 class="feature-title">{{ $title }}</h3>
+  <h3 class="feature-title">{{$title}}</h3>
   <hr class="feature-separator" />
-  <p class="feature-content">{{ .Inner | markdownify }}</p>
+  <p class="feature-content">{{.Inner | markdownify}}</p>
 </div>

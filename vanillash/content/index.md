@@ -14,11 +14,12 @@ On this page, you can expect:
 - Occasional update about my personal projects
 - Hobby-related resources
 - Write-ups about topics I find interesting
-  {{< /div >}}
-  {{< div class="col-third">}}
-  Placeholder for picture
-  {{< /div >}}
-  {{< /feature-grid >}}
+
+{{< /div >}}
+{{< div class="col-third">}}
+{{< profile-picture src="/images/Profile.png" alt="Profile Picture" subtitle="Me on a good day" >}}
+{{< /div >}}
+{{< /feature-grid >}}
 
 {{< timeline >}}
 {{< timeline-item title="B.Sc. Computer Science" date="2021" >}}

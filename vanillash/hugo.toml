@@ -2,3 +2,8 @@ baseURL = 'https://vanilla.sh/'
 languageCode = 'en-GB'
 title = 'Vanilla.sh'
 theme = 'vanillash'
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true

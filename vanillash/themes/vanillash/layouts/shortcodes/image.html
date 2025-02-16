@@ -1,0 +1,4 @@
+{{- $src := .Get "src" -}} {{- $class := .Get "class" | default "" -}} {{- $alt
+:= .Get "alt" | default "" -}}
+
+<img src="{{ $src }}" class="{{ $class }}" alt="{{ $alt }}" />

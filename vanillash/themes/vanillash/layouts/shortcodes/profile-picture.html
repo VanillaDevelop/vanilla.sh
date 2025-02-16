@@ -1,0 +1,5 @@
+<div class="profile-picture-container">
+  {{ with .Get "src" }} <img src="{{ . | relURL }}" alt="{{ $.Get "alt" }}"
+  class="profile-picture" /> {{ end }}
+  <div class="profile-picture-subtitle">{{ .Get "subtitle" }}</div>
+</div>

@@ -1,25 +1,23 @@
-{{ $title := .Get "title" }}
-{{ $subtitle := .Get "subtitle" }}
-{{ $image := .Get "image" }}
-{{ $class := .Get "class" }}
-{{ $links := .Get "links" }}
-
+{{ $title := .Get "title" }}{{ $subtitle := .Get "subtitle" }}{{ $image := .Get
+"image" }}{{ $class := .Get "class" }}{{ $links := .Get "links" }}
 
 <div class="card-item {{ $class }}">
-    <h3 class="card-title">{{ $title }}</h3>
-    <h4 class="card-subtitle">{{ $subtitle }}</h4>
-    <div class="card-image">
-        {{ with .Get "image" }}
-        <img src="{{ $image }}" alt="{{ $title }}" />
-        {{ end }}
-    </div>
-    <p class="card-content">{{ .Inner | markdownify }}</p>
-    {{ if $links }}
-    <div class="card-links">
-        {{ range (split $links ",") }}
-        {{ $linkParts := split . "|" }}
-        <a href="{{ index $linkParts 1 }}" class="card-link">{{ index $linkParts 0 }}</a>
-        {{ end }}
-    </div>
+  <h3 class="card-title">{{ $title }}</h3>
+  <h4 class="card-subtitle">{{ $subtitle }}</h4>
+  <div class="card-image">
+    {{ with .Get "image" }}
+    <img src="{{ . }}" alt="{{ $title }}" />
     {{ end }}
+  </div>
+  <p class="card-content">{{ .Inner | markdownify }}</p>
+  {{ if $links }}
+  <div class="card-links">
+    {{ range (split $links ",") }} {{ $linkParts := split . "|" }} {{ if ge (len
+    $linkParts) 2 }}
+    <a href="{{ index $linkParts 1 | safeURL }}" class="card-link"
+      >{{ index $linkParts 0 }}</a
+    >
+    {{ end }} {{ end }}
+  </div>
+  {{ end }}
 </div>
