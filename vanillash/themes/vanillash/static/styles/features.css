@@ -12,6 +12,12 @@
   padding: 1.5rem;
 }
 
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .feature-item {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -54,9 +60,22 @@
 }
 
 .card-links {
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   gap: 1rem;
+  margin-top: auto;
+  min-height: 1.5rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #666;
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
 
 .feature-separator {

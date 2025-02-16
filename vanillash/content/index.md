@@ -6,14 +6,14 @@ title = 'Home'
 
 {{< feature-grid >}}
 {{< div class="col-twothirds">}}
-Welcome to my website! My name is **Vanilla**, and I am a software developer from Austria.
+Hi! I'm Georg. I'm a software developer from Austria, spending my free time tinkering with new technologies and building my own projects.
 
-On this page, you can expect:
+On this website, you can expect:
 
 - A summary of my recent work
-- Occasional update about my personal projects
+- Occasional updates about my personal projects
 - Hobby-related resources
-- Write-ups about topics I find interesting
+- Write-ups on topics I find interesting
 
 {{< /div >}}
 {{< div class="col-third">}}
@@ -36,45 +36,43 @@ Working as a full-stack software developer in online banking, maintaining legacy
 {{< /timeline-item >}}
 {{< /timeline >}}
 
-# Development
+# Skills
 
-I consider myself an _engineer_ at heart. That generally means a lot of tinkering. Over the years I've played around with several dozen different programming language, frameworks, and libraries. I learned the basics, maybe built a small project with it, and then moved on. The problem with this approach is that you never really learn the intricacies of each tool fully, and spend a lot of time re-learning the same concepts with different accents. Recently, I've resolved myself to use a smaller toolkit.
+I tend to pick up new skills and technologies quickly, but I don't always stick with them. Over the years I've played around with several dozen different programming languages, frameworks, and libraries. Recently, I've pivoted to a smaller toolkit, so I can spend more time mastering the intricacies of each tool and building things, rather than re-learning the same concepts with different accents.
 
 {{< feature-grid >}}
 {{< feature-item
-    title="Dart"
+    title="Flutter"
     image="/images/Flutter-logo.png"
     class="col-half" >}}
-As a huge fan of rapid prototyping and building clean and useful UIs for my applications, I've recently fallen in love with Flutter for building cross-platform frontend apps. In the future, I hope to pivot most of my frontend- and full-stack development to Dart and Flutter.
+As a huge fan of rapid prototyping and building clean UIs for my applications, I've recently fallen in love with Flutter for building cross-platform frontend applications. In the future, I hope to pivot most of my frontend development to Dart and Flutter.
 {{< /feature-item >}}
 
 {{< feature-item
     title="Java"
     image="/images/Java-logo.png"
     class="col-half" >}}
-Let's be real: Java is probably not a favourite among coders. However, as I have a lot of exposition to Java EE for backend development in my current position, Spring is a natural fit for quickly bootstrapping APIs, and Java-based servers can generally be deployed relatively painlessly.
+I have a lot of exposure to Java EE for backend development in my current position, so Spring is a natural fit for quickly bootstrapping APIs. Additionally, Java-based servers can generally be deployed relatively painlessly. Hence, Java is a staple in my toolkit for backend development.
 {{< /feature-item >}}
 
 {{< feature-item
     title="Python"
     image="/images/Python-logo.png"
     class="col-half" >}}
-I used Python excessively during my university days, especially during my master's programme, which was heavily focused on machine learning and data science. While I've since sworn off using Python for other use-cases like web-apps (Django ♥), I still use it for data analysis and machine learning projects.
+Python is king when it comes to machine learning and data science. I've used it extensively during my master's program, and I still use it for data analysis and machine learning projects to this day. For visualizing and sharing results, Jupyter Notebooks are a great tool.
 {{< /feature-item >}}
 
 {{< feature-item
-    title="C / C# / C++"
+    title="C-based Languages"
     image="/images/C-logo.png"
     class="col-half" >}}
-Although C# holds a special place in my heart for being the first programming language I learned, I tend not to come in contact with it very frequently. However, C-based languages are used in various places of interest, such as game development and microcontrollers.
+While not part of my daily toolkit, C-based languages like C, C++, and C# are a staple in various topics that interest me, such as game development and microcontrollers. Although I've played around with these languages in the past, they are mostly supplementary to my main toolkit.
 {{< /feature-item >}}
 {{< /feature-grid >}}
 
-Despite focusing on these languages, the world of software development is vast, and I won't always be able to resist the temptation to tinker with a new toy. For example, the website you're on right now was originally scaffolded using Bootstrap Studio using pure HTML and CSS, then converted into a Hugo template. Did I know what Hugo was before I built it? No, but after seeing that Squarespace charges 11€/month and doesn't even offer the option to change your template for all pages of a blog, I figured this was the better investment.
-
 # Current Projects
 
-Looking for a quick showcase of what I've been working on recently? Recently, my focus has been web development. I've
+Despite my better judgement, I tend to work on several projects at a time. Below is a selection of projects I've worked on recently or am currently working on.
 
 {{< feature-grid >}}
 {{< card-item
@@ -82,34 +80,32 @@ Looking for a quick showcase of what I've been working on recently? Recently, my
     subtitle="Flutter, Firebase"
     image="/images/Cockpit.svg"
     class="col-third"
-    links=Test|https://google.com >}}
-
+    links=View|https://vanilladevelop.github.io/cockpit >}}
 #### Order from Chaos
 
-Cockpit is a life dashboard built in Flutter with a Firebase backend, focused
-{{< /feature-item >}}
+Cockpit is a life dashboard built in Flutter with a Firebase backend, focused on providing ways to improve your productivity at a glance. The first module, "Stream of Consciousness", is a tool to quickly capture and review your thoughts, and is live now.
+{{< /card-item >}}
 
 {{< card-item
     title="Nya.GG"
     subtitle="Java, Spring, Thymeleaf"
     image="/images/Nya.svg"
-    class="col-third"
-    links=Test|https://google.com >}}
+    class="col-third">}}
 
 #### Catgirl-Powered Hosting
 
-A couple of years ago, I purchased the Nya.GG domain, and now I'm holding onto it like a domain goblin because good domains are worth gold. Because of how short the domain name is, I always wanted to use it as an easy image and link distribution platform, which I've recently built using Java Spring.
-{{< /feature-item >}}
+Nya.GG is a simple image and link distribution platform, built using Java Spring with a Thymeleaf frontend and a PostgreSQL database. It's meant to be a more customizable alternative to platforms like Imgur. Nya.GG is currently under development.
+{{< /card-item >}}
 
 {{< card-item
     title="Vanilla.sh"
     subtitle="Hugo, HTML, CSS"
     image="/images/Vanilla.svg"
     class="col-third"
-    links=Test|https://google.com >}}
+    links=View|https://vanilla.sh >}}
 
 #### Elegance in Simplicity
 
-Vanilla.sh is the website you're currently on. If you're reading this, that means it's live! It's meant to act as a general portfolio of my work. Do you think it's doing its job? The website was scaffolded in pure HTML and CSS and then migrated onto a Hugo theme in order to be able to easily alter its content.
-{{< /feature-item >}}
+Vanilla.sh is a simple, elegant portfolio of my work. Additionally, it's a place where I can publish hobby-related resources and write-ups. It's built using Hugo, a static site generator, with a custom theme, and is continuously deployed via a CI/CD pipeline.
+{{< /card-item >}}
 {{< /feature-grid >}}
