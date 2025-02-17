@@ -40,3 +40,18 @@
 .list-grid-item-link a:hover {
   color: #2563eb;
 }
+
+.list-grid-item-tags {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .list-grid {
+    grid-template-columns: 1fr;
+  }
+}

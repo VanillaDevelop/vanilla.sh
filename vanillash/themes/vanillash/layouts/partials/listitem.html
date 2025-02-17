@@ -2,7 +2,7 @@
   <h3>{{ .Title }}</h3>
   {{ if .PublishDate }}
   <div class="list-grid-item-date">
-    {{ time.Format "02.01.2006" .PublishDate }}
+    {{ time.Format "January 2, 2006" .PublishDate }}
   </div>
   {{ end }} {{ if .Summary }}
   <div class="list-grid-item-summary">{{ .Summary }}</div>
@@ -10,4 +10,11 @@
   <div class="list-grid-item-link">
     <a href="{{ .RelPermalink }}"> Continue Reading </a>
   </div>
+  {{ with .Params.tags }}
+  <div class="list-grid-item-tags">
+    {{ range $index, $tag := . }}
+    <span class="tag">{{ $tag }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
 </div>

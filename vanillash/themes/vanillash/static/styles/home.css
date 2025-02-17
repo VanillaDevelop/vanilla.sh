@@ -1,0 +1,19 @@
+.profile-picture {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.profile-picture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.5rem;
+}

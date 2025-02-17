@@ -53,24 +53,14 @@ h6 {
   flex: 1 1 calc(66.666% - 1rem);
 }
 
-.profile-picture-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-picture-subtitle {
-  font-size: 0.9rem;
-  color: #666;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.profile-picture {
-  border-radius: 50%;
-  width: 10em;
-  height: 10em;
+.tag {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  background-color: #f3f4f6;
+  border-radius: 4px;
 }
 
 @media (max-width: 1000px) {
