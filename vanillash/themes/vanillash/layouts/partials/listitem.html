@@ -11,7 +11,7 @@
     <a href="{{ .RelPermalink }}"> Continue Reading </a>
   </div>
   {{ with .Params.tags }}
-  <div class="list-grid-item-tags">
+  <div class="tags list-tags">
     {{ range $index, $tag := . }}
     <span class="tag">{{ $tag }}</span>
     {{ end }}

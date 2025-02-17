@@ -1,6 +1,6 @@
 {{$title := .Get "title"}}{{$image := .Get "image"}}{{$class := .Get "class"}}
 
-<div class="feature-item {{$class}}">
+<div class="card feature-item {{$class}}">
   <div class="feature-image">
     {{if $image}}
     <img src="{{$image}}" alt="{{$title}}" />

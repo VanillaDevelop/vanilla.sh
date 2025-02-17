@@ -2,6 +2,10 @@
   margin-bottom: 0;
 }
 
+.single-tags {
+  margin-bottom: 1rem;
+}
+
 .meta {
   font-size: 0.9rem;
   color: #666;
@@ -11,13 +15,6 @@
   margin-bottom: 1rem;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 1rem;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .back-link {

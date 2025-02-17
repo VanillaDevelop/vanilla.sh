@@ -4,7 +4,7 @@
   <div class="meta">
     <p>{{ time.Format "January 2, 2006" .PublishDate }}</p>
     {{ if .Params.Tags }}
-    <div class="tags">
+    <div class="tags single-tags">
       {{ range .Params.Tags }}
       <span class="tag">{{ . }}</span>
       {{ end }}
