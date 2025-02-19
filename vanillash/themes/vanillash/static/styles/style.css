@@ -76,6 +76,16 @@ h6 {
   row-gap: 0.5rem;
 }
 
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2563eb;
+}
+
 @media (max-width: 1000px) {
   .col-third {
     flex: 1 1 100%;

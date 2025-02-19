@@ -5,7 +5,7 @@
     {{ time.Format "January 2, 2006" .PublishDate }}
   </div>
   {{ end }} {{ if .Summary }}
-  <div class="list-grid-item-summary">{{ .Summary }}</div>
+  <div class="list-grid-item-summary">{{ .Summary | plainify }}</div>
   {{ end }}
   <div class="list-grid-item-link">
     <a href="{{ .RelPermalink }}"> Continue Reading </a>

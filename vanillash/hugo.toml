@@ -4,6 +4,7 @@ title = 'Vanilla.sh'
 theme = 'vanillash'
 
 disableKinds = ["taxonomy", "term"]
+summaryLength = 30
 
 [markup]
     [markup.goldmark]
