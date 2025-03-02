@@ -39,7 +39,7 @@ jobs:
           $SSH_CMD deploy@vanilla.sh "mkdir -p /var/www/vanilla.sh"
   
           # Use rsync to sync the built site
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ deploy@vanilla.sh:/var/www/vanilla.sh
+          rsync -avz --delete -e "$SSH_CMD" public/ deploy@vanilla.sh:/var/www/vanilla.sh
   
           # Run the post-deploy script on the server
           $SSH_CMD deploy@vanilla.sh "bash /home/deploy/deploy.sh"
