@@ -1,6 +1,5 @@
 +++
 date = '2025-02-19T20:00:00+01:00'
-draft = true
 title = 'Vanilla.sh - A New Beginning'
 tags = ['Hugo', 'HTML', 'CSS', 'Vanilla.sh']
 +++

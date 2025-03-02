@@ -1,0 +1,40 @@
+name: Deploy Hugo Site
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Hugo
+        run: |
+          sudo apt-get update
+          sudo apt-get install hugo -y
+
+      - name: Build Hugo Site
+        run: |
+          hugo --minify -d public
+
+
+      - name: Deploy to Server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          # Set up SSH
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh -o StrictHostKeyChecking=no deploy@vanilla.sh "mkdir -p /var/www/vanilla.sh"
+  
+          # Use rsync to sync the built site
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ deploy@vanilla.sh:/var/www/vanilla.sh
+  
+          # Run the post-deploy script on the server
+          ssh -o StrictHostKeyChecking=no deploy@vanilla.sh "bash /home/deploy/deploy.sh"
