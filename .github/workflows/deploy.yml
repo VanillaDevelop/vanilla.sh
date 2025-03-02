@@ -26,15 +26,16 @@ jobs:
       - name: Deploy to Server
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
         run: |
           # Set up SSH
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh -o StrictHostKeyChecking=no deploy@vanilla.sh "mkdir -p /var/www/vanilla.sh"
+          ssh -o -p $SSH_PORT StrictHostKeyChecking=no deploy@vanilla.sh "mkdir -p /var/www/vanilla.sh"
   
           # Use rsync to sync the built site
           rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" public/ deploy@vanilla.sh:/var/www/vanilla.sh
   
           # Run the post-deploy script on the server
-          ssh -o StrictHostKeyChecking=no deploy@vanilla.sh "bash /home/deploy/deploy.sh"
+          ssh -o -p $SSH_PORT StrictHostKeyChecking=no deploy@vanilla.sh "bash /home/deploy/deploy.sh"
