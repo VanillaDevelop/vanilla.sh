@@ -40,6 +40,3 @@ jobs:
   
           # Use rsync to sync the built site
           rsync -avz --delete --no-perms --omit-dir-times -e "$SSH_CMD" public/ deploy@vanilla.sh:/var/www/vanilla.sh
-  
-          # Run the post-deploy script on the server
-          $SSH_CMD deploy@vanilla.sh "bash /home/deploy/deploy.sh"
