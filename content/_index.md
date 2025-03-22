@@ -6,7 +6,7 @@ title = 'Home'
 
 {{< feature-grid >}}
 {{< div class="col-twothirds">}}
-Hi! I'm Georg. I'm a software developer from Austria, spending my free time tinkering with new technologies and building my own projects.
+Hi! I'm Vanilla. I'm a software developer from Austria, spending my free time tinkering with new technologies and building my own projects.
 
 On this website, you can expect:
 
@@ -17,7 +17,7 @@ On this website, you can expect:
 
 {{< /div >}}
 {{< div class="col-third">}}
-{{< profile-picture src="/images/Profile.png" alt="Profile Picture" subtitle="Me on a good day" >}}
+{{< profile-picture src="/images/Profile.png" alt="Profile Picture" subtitle="Rare outdoor picture" >}}
 {{< /div >}}
 {{< /feature-grid >}}
 
@@ -88,13 +88,14 @@ Cockpit is a life dashboard built in Flutter with a Firebase backend, focused on
 
 {{< card-item
     title="Nya.GG"
-    subtitle="Java, Spring, Thymeleaf"
+    subtitle="Spring, JSF, AWS"
     image="/images/Nya.svg"
-    class="col-third">}}
+    class="col-third"
+    links=View|https://nya.gg >}}
 
 #### Catgirl-Powered Hosting
 
-Nya.GG is a simple image and link distribution platform, built using Java Spring with a Thymeleaf frontend and a PostgreSQL database. It's meant to be a more customizable alternative to platforms like Imgur. Nya.GG is currently under development.
+Nya.GG is a simple image and link distribution platform, built using Java Spring with a JSF frontend and a PostgreSQL database. It's meant to be a more customizable alternative to platforms like Imgur. The MVP for image hosting is now available!
 {{< /card-item >}}
 
 {{< card-item
