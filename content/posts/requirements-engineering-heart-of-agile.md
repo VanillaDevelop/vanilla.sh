@@ -1,5 +1,5 @@
 +++
-date = '2025-02-19T20:00:00+01:00'
+date = '2025-05-01T20:00:00+01:00'
 title = 'Requirements Engineering: The Heart of Agile?'
 tags = ['Agile', 'Requirements Engineering', 'Blog']
 +++
