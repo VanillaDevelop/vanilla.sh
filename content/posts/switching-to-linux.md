@@ -1,5 +1,5 @@
 +++
-date = '2025-02-24T20:00:00+01:00'
+date = '2025-05-24T20:00:00+01:00'
 title = 'Switching to Linux: An Experience'
 tags = ['Linux', 'Operating Systems', 'SysAdmin']
 +++
