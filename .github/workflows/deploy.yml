@@ -36,7 +36,7 @@ jobs:
           
           SSH_CMD="ssh -p $SSH_PORT -o StrictHostKeyChecking=no"
           
-          $SSH_CMD deploy@vanilla.sh "mkdir -p /var/www/vanilla.sh"
+          $SSH_CMD deploy@195.201.88.6 "mkdir -p /var/www/vanilla.sh"
   
           # Use rsync to sync the built site
-          rsync -avz --delete --no-perms --omit-dir-times -e "$SSH_CMD" public/ deploy@vanilla.sh:/var/www/vanilla.sh
+          rsync -avz --delete --no-perms --omit-dir-times -e "$SSH_CMD" public/ deploy@195.201.88.6:/var/www/vanilla.sh
