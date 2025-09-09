@@ -7,8 +7,7 @@
     </div>
     {{ end }}
     {{ if .Summary }}
-    {{ $cleanSummary := .Summary | replaceRE "(?s)^\\s*(<h[1-6][^>]*>.*?</h[1-6]>\\s*)+" "" }}
-    <div class="list-grid-item-summary">{{ $cleanSummary | plainify }}</div>
+    <div class="list-grid-item-summary">{{ .RawContent | truncate 250 | replaceRE "## (.+)" "**$1**" | replaceRE "### (.+)" "**$1**" | markdownify }}</div>
     {{ end }}
   </div>
   <div class="list-grid-item-meta">

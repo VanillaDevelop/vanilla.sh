@@ -17,7 +17,7 @@ On this website, you can expect:
 
 {{< /div >}}
 {{< div class="col-third">}}
-{{< profile-picture src="/images/Profile.png" alt="Profile Picture" subtitle="Rare outdoor picture" >}}
+{{< profile-picture src="/images/Profile.png" alt="Profile Picture" subtitle="It's Me!" >}}
 {{< /div >}}
 {{< /feature-grid >}}
 
@@ -95,7 +95,7 @@ Cockpit is a life dashboard built in Flutter with a Firebase backend, focused on
 
 #### Catgirl-Powered Hosting
 
-Nya.GG is a simple image and link distribution platform, built using Java Spring with a JSF frontend and a PostgreSQL database. It's meant to be a more customizable alternative to platforms like Imgur. The MVP for image hosting is now available!
+Nya.GG is a simple image and video distribution platform, built using Java Spring with a JSF frontend and a PostgreSQL database. It's meant to be a more personal alternative to platforms like Imgur. The image hosting module is now available!
 {{< /card-item >}}
 
 {{< card-item
